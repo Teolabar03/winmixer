@@ -11,6 +11,13 @@ i VU-meter in tempo reale.
 - Layout commutabile tra verticale e orizzontale.
 - L'orientamento scelto viene salvato in `config.json` e recuperato al riavvio.
 
+## Plugin per OBS Studio
+
+In [`obs-plugin/`](obs-plugin) c'è la stessa idea come plugin per OBS Studio 32 su Windows:
+un dock "Mixer di Windows" con cursori e indicatori di livello identici a quelli del mixer audio di OBS.
+Istruzioni di compilazione e installazione nel suo [README](obs-plugin/README.md).
+Il plugin è distribuito con licenza GPL-2.0 (obbligatoria per i plugin che usano libobs).
+
 ## Avvio
 
 ```bash
