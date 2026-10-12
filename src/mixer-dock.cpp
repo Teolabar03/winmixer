@@ -393,6 +393,8 @@ WinMixerDock::WinMixerDock(QWidget *parent) : QWidget(parent)
 	optionsButton_ = new QToolButton(this);
 	optionsButton_->setMenu(menu);
 	optionsButton_->setPopupMode(QToolButton::InstantPopup);
+	/* Solo i tre puntini: niente freccetta che Qt aggiunge ai pulsanti con menu */
+	optionsButton_->setStyleSheet("QToolButton::menu-indicator { image: none; width: 0px; }");
 	optionsButton_->setToolTip(text("WinMixer.Options"));
 	optionsButton_->setAccessibleName(text("WinMixer.Options"));
 	optionsButton_->setCursor(Qt::PointingHandCursor);
