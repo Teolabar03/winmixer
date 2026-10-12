@@ -1,15 +1,24 @@
+# Plugin OBS: dipendenze scaricate da CMake, cartelle di build e pacchetti
+/.deps/
+/build_*/
+/release/
+*.lock.json
+/cmake/.CMakeBuildNumber
+.DS_Store
+
+# Edizione legacy (Python)
 .venv/
 venv/
 env/
-node_modules/
 __pycache__/
 *.pyc
 .pytest_cache/
 .ruff_cache/
-build/
-dist/
+legacy/build/
+legacy/dist/
+
+# Strumenti
+node_modules/
 .vs/
-bin/
-obj/
 log/
 *.log
